@@ -21,7 +21,7 @@ def detect_rising(state,i):
 
 def button_listen(BUTTON):
 	GPIO.setwarnings(False)
-	#GPIO.setmode(GPIO.BOARD)
+	GPIO.setmode(GPIO.BOARD)
 	GPIO.setup(BUTTON,GPIO.IN,pull_up_down=GPIO.PUD_UP)
 	state = 10*[1]
 	i = 0
@@ -43,6 +43,6 @@ def button_listen(BUTTON):
 
 
 if __name__ == '__main__':
-	BUTTON = 12
+	BUTTON = 5
 	button_listen(BUTTON)
 	GPIO.cleanup()
