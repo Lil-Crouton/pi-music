@@ -6,7 +6,7 @@ def fadeOn():
 	pixels = neopixel.NeoPixel(board.D18,300)
 
 	pixels.brightness = 0
-	pixels.fill((255,0,0))
+	pixels.fill((128,0,128))
 
 	i = 0
 	fadeTime = 2 #s
