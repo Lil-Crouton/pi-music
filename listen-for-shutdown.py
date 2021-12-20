@@ -6,6 +6,7 @@ import subprocess
 import board
 import neopixel
 
+
 def listenForEdge():
 	GPIO.wait_for_edge(3, GPIO.FALLING)
 	timer = time.time()
